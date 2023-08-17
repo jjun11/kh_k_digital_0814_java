@@ -27,5 +27,6 @@ public class TypeCasting {
         System.out.println(total2); // 323
         System.out.println(total3); // 323
 
+            //형변환 주석이 반영되는지 확인
     }
 }
