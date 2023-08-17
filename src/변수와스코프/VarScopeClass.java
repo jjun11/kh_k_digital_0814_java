@@ -20,6 +20,10 @@ public class VarScopeClass {
             num1 += 0.1;
         }
         System.out.println(num1);
+        System.out.println(num1);
+        System.out.println(num1);
+        System.out.println(num1);
+
 
     }
 }
