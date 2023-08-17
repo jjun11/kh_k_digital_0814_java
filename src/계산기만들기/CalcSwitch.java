@@ -7,10 +7,11 @@ public class CalcSwitch {
         int x, y; // 좌변과 우변
         char op; // 연산자
         Scanner sc = new Scanner(System.in);
-        System.out.print("계산식 입력 : ");
+        System.out.print("좌변 입력 : ");
         x = sc.nextInt();
-        System.out.print("계산식 입력 : ");
+        System.out.print("연산자 입력 : ");
         op = sc.next().charAt(0);
+        System.out.print("우변 입력 : ");
         y = sc.nextInt();
         switch (op) {
             case '+' :
