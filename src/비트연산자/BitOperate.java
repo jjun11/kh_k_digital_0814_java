@@ -16,7 +16,7 @@ public class BitOperate {
         System.out.println(~num1);
         System.out.println(num1 << 1);
         System.out.println(num1 >> 1);
-        int num0 = -;
+        int num0 = 10;
         String num0Trans2 = Integer.toString(num0, 2);
         System.out.println(num0Trans2);
     }

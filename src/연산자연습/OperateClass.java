@@ -25,6 +25,10 @@ public class OperateClass {
         int x = 10;
         int y = 20;
         boolean rst1, rst2, rst3;
+        System.out.print("x > y = ");
+        System.out.println("x > y = " + (x > y));
+
+
 //        System.out.println(x > y); // x가 y보다 큰가? : false 거짓
 //        System.out.println(x < y); // x가 y보다 작은가? : true 참
 //        System.out.println(x == y); // x가 y와 같은가? : false 거짓
@@ -47,15 +51,15 @@ public class OperateClass {
 //        System.out.println("Java" + 18.04 + 12);
 //        System.out.println(3 + 3.3 + "JDK");
         //연산자 우선순위 확인
-        int val1 = 5;
-        int val2 = 5;
-        int val3 = 9;
-        int result1, result2, result3;
-        result1 = val1 + val2 * val3; // 30
-        result2 = (val1 + val2) * val3; // 50
-        result3 = val1 + (++val2) * val3; // 35
-
-        System.out.println(result1 +""+ result2 +""+ result3);
+//        int val1 = 5;
+//        int val2 = 5;
+//        int val3 = 9;
+//        int result1, result2, result3;
+//        result1 = val1 + val2 * val3; // 30
+//        result2 = (val1 + val2) * val3; // 50
+//        result3 = val1 + (++val2) * val3; // 35
+//
+//        System.out.println(result1 +""+ result2 +""+ result3);
 
     }
 }
