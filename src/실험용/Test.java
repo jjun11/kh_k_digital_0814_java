@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Test {
     public static void main(String[] args) {
 
+
         Scanner sc = new Scanner(System.in); // 키보드로 입력을 받기 위해서
 //        System.out.print(" ~ "); // 키보드로 입력받을 값을 설명하기 위해서
 //        int age = sc.nextInt(); // int(자료형-숫자-정수형) age(변수) 에 키보드로 입력한 값을 대입한다
