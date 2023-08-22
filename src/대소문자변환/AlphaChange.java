@@ -12,10 +12,10 @@ public class AlphaChange {
 
         System.out.print("문자열 입력 : ");
         String alpha = sc.next();
-        for(int i = 0; i < alpha.length(); i++) {
-            char ch = alpha.charAt(i);
-            if(ch > 'a') System.out.print((char) (ch + ('a' - 'A')));
-            else System.out.print((char) (ch - ('a' - 'A')));
+        for(int i = 0; i < alpha.length(); i++) { // i 에 0 대입 ; i 가 alpha의 길이보다 작을때까지 i에 1씩 가산한다
+            char ch = alpha.charAt(i); // ch에 alpha 문자열의 i번째 문자를 대입한다
+            if(ch < 'a') System.out.print( (char)(ch + ('a' - 'A')));
+            else System.out.print( (char)(ch - ('a' - 'A')));
         }
     }
 }
