@@ -18,6 +18,8 @@ public class Test {
             System.out.println("양수 입니다.");
         } else {
             System.out.println("음수 입니다.");
+
+
         }
     }
 }
