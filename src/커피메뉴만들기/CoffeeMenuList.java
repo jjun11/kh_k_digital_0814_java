@@ -47,11 +47,52 @@ public class CoffeeMenuList {
                         System.out.println("가격 : " + map.get(key).price);
                         System.out.println("분류 : " + map.get(key).category);
                         System.out.println("설명 : " + map.get(key).description);
-
-                    }
+                    } else System.out.println("해당 메뉴가 존재하지 않습니다.");
+                    break;
                 case 3:
+                    System.out.println("추가 할 메뉴를 입력하세요 : ");
+                    key = sc.next();
+                    if(map.containsKey(key)) {
+                        System.out.println("해당 메뉴가 이미 존재합니다.");
+                    } else {
+                        System.out.print("가격 입력 : ");
+                        int price = sc.nextInt();
+                        System.out.println("분류 입력 : ");
+                        String category = sc.next();
+                        sc.nextLine();
+                        System.out.println("설명 입력 : ");
+                        String description = sc.nextLine();
+                        map.put(key, new MenuInfo(key, price, category, description));
+                    }
+                    break;
                 case 4:
+                    System.out.println("삭제할 메뉴를 선택하세요 : ");
+                    key = sc.next();
+                    if(map.containsKey(key)) {
+                        map.remove(key);
+                        System.out.println(key + "메뉴를 삭제하였습니다.");
+                    } else {
+                        System.out.println("선택하신 메뉴가 없습니다.");
+                    }
+
+                    break;
                 case 5:
+                    System.out.print("수정할 메뉴를 입력하세요 : ");
+                    key = sc.next();
+                    if (map.containsKey(key)) {
+                        System.out.print("가격 입력 : ");
+                        int price = sc.nextInt();
+                        System.out.print("분류 입력 : ");
+                        String category = sc.next();
+                        sc.nextLine();
+                        System.out.print("설명 입력 : ");
+                        String description = sc.nextLine();
+                        //키값은 동일하고 값이 변경되는 경우 .replace() 사용
+                        map.replace(key, new MenuInfo(key, price, category, description));
+                    } else {
+                        System.out.println("수정할 메뉴가 없습니다.");
+                    }
+                    break;
                 case 6:
                     System.out.println("메뉴를 종료합니다.");
                     System.exit(0);
