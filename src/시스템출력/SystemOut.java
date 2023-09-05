@@ -1,5 +1,6 @@
 package 시스템출력;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 // System.out : 표준 출력 스트림
